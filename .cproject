@@ -27,11 +27,12 @@
 							<tool id="cdt.managedbuild.tool.macosx.c.linker.macosx.exe.debug.299616234" name="MacOS X C Linker" superClass="cdt.managedbuild.tool.macosx.c.linker.macosx.exe.debug"/>
 							<tool command="g++ -m32 -framework Carbon -framework IOKit -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -framework CoreVideo -framework CoreServices -framework QTKit -framework OpenGL -framework QuickTime -framework AppKit -framework Cocoa -framework CoreData -framework Foundation" id="cdt.managedbuild.tool.macosx.cpp.linker.macosx.exe.debug.850011684" name="MacOS X C++ Linker" superClass="cdt.managedbuild.tool.macosx.cpp.linker.macosx.exe.debug">
 								<option id="macosx.cpp.link.option.paths.606959176" name="Library search path (-L)" superClass="macosx.cpp.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="&quot;${CWD}/../Lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Lib}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${CINDER_PATH}/lib&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${CINDER_PATH}/lib/ios-sim&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${CINDER_PATH}/lib/ios&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${CINDER_PATH}/lib/macosx&quot;"/>
+									<listOptionValue builtIn="false" value="/usr/lib"/>
 								</option>
 								<option id="macosx.cpp.link.option.libs.1593998636" name="Libraries (-l)" superClass="macosx.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="cinder"/>
@@ -52,7 +53,7 @@
 								<option id="gnu.cpp.compilermacosx.exe.debug.option.optimization.level.1167803440" name="Optimization Level" superClass="gnu.cpp.compilermacosx.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.macosx.exe.debug.option.debugging.level.1628416572" name="Debug Level" superClass="gnu.cpp.compiler.macosx.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.1486716906" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${CWD}/../Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;&quot;${workspace_loc:/${ProjName}/Include}&quot;&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${CINDER_PATH}/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${CINDER_PATH}/boost&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers&quot;"/>
