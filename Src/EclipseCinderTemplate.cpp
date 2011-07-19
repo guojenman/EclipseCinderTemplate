@@ -1,18 +1,3 @@
-/**
- * EclipseLovesCinder example application
- *
- * * On first run, run Project -> Clean...
- * * If you change your project name go into debug configurations (arrow next to bug icon), and modify where the debug application will run from
- *
- * This project is released under public domain, do whatever with it.
- *
- *
- * Mario Gonzalez
- * http://onedayitwillmake
- *
- * Modified by:
- * Guojian Miguel Wu
- */
 #include "cinder/app/AppBasic.h"
 #include "cinder/Color.h"
 #include "cinder/gl/gl.h"
