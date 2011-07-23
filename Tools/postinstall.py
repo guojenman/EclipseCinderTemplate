@@ -2,6 +2,7 @@
 # Creates OSX application bundle
 # All files inside /Resources are copied to application bundle, if newer or don't exist
 # Created by Mario Gonzalez
+# Modified by Guojian Miguel Wu
 import sys
 import os
 import time
@@ -67,10 +68,10 @@ if os.path.exists(resourcesDir +"~Info.plist"):  # Copy info.plist file to AppBu
   os.remove(resourcesDir + "~Info.plist")
   # Delete ~Info.plist to avoid confusion
 else:
-  print "!! (EclipseLovesCinder): Warning - No Info.plist file exist in resources directory!"
+  print "!! " + argumentDictionary['appName'] + ": Warning - No Info.plist file exist in resources directory!"
   
 # Copy application binary
 print "Copying binary..."
 shutil.copy( argumentDictionary['cwd'] +"/"+ argumentDictionary['appName'], appBundleMacOS + "/" +argumentDictionary['appName'] )
 
-print "--- EclipseLovesCinder postbuild.py complete" 
+print "--- " + argumentDictionary['appName'] + " postbuild.py complete" 
