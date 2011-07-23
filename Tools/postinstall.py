@@ -71,7 +71,7 @@ else:
   print "!! " + argumentDictionary['appName'] + ": Warning - No Info.plist file exist in resources directory!"
   
 # Copy application binary
-print "Copying binary..."
-shutil.copy( argumentDictionary['cwd'] +"/"+ argumentDictionary['appName'], appBundleMacOS + "/" +argumentDictionary['appName'] )
+print "Moving binary..."
+shutil.move( argumentDictionary['cwd'] +"/"+ argumentDictionary['appName'], appBundleMacOS + "/" +argumentDictionary['appName'] )
 
 print "--- " + argumentDictionary['appName'] + " postbuild.py complete" 
