@@ -18,8 +18,10 @@ for arg in sys.argv:
 
 # Generate empty app bundle  directory
 appBundle = argumentDictionary['cwd'] + "/" + argumentDictionary['appName'] + ".app"
-if not os.path.exists(appBundle):
-    os.makedirs(appBundle)
+if os.path.exists(appBundle):
+	shutil.rmtree(appBundle)
+
+os.makedirs(appBundle)
     
 # Generate appBundle/MacOS directory
 appBundleMacOS = appBundle + "/Contents/MacOS"
